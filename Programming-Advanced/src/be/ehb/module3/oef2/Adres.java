@@ -7,6 +7,14 @@ public class Adres {
     private String woonplaats;
     private int bus;
 
+    public Adres() {
+        this.straatnaam = "Geen straatnaam";
+        this.huisnummer = 0;
+        this.postcode = 0;
+        this.woonplaats = "Geen woonplaats";
+        this.bus = 0;
+    }
+
     public Adres(String straatnaam, int huisnummer, int postcode, String woonplaats, int bus) {
         this.straatnaam = straatnaam;
         if (postcode < 0 || postcode > 9999) {
