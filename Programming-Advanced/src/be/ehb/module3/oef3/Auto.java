@@ -23,7 +23,6 @@ public class Auto {
     }
 
     public double rij(double afstand) {
-        kilometerteller += afstand;
         if(afstand < 0) {
             afstand -= afstand*2;
         }
